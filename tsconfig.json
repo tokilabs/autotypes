@@ -1,0 +1,39 @@
+{
+  "extends": "./config/tsconfig.flexible",
+  "compileOnSave": true,
+  "compilerOptions": {
+    "target": "ES6",
+    "outDir": "lib",
+    "rootDir": "src",
+    "module": "commonjs",
+    "noImplicitAny": false,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "declaration": true,
+    "sourceMap": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "importHelpers": true,
+    "inlineSourceMap": false,
+    "listFiles": false,
+    "traceResolution": false,
+    "pretty": true,
+    "lib" : [
+      "es6"
+    ],
+    "types" : [
+      "node"
+    ],
+    "baseUrl": "."
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "lib",
+    "tests",
+    "gulpfile.ts"
+  ]
+}

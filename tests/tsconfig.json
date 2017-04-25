@@ -1,0 +1,19 @@
+{
+  "extends": "../tsconfig",
+  "compilerOptions": {
+    "rootDir": "..",
+    "types" : [
+      "node",
+      "mocha"
+    ]
+  },
+  "include": [
+    "src/**/*.ts",
+    "tests"
+  ],
+  "exclude": [
+    "node_modules",
+    "lib",
+    "gulpfile.ts"
+  ]
+}
