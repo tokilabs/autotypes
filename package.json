@@ -1,13 +1,13 @@
 {
   "name": "autotypes",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Automatically download types for TypeScript",
   "author": "Saulo Vallory <saulo@cashfarm.tech>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cashfarm/store/issues"
+    "url": "https://github.com/cashfarm/autotypes/issues"
   },
-  "homepage": "https://github.com/cashfarm/store#README",
+  "homepage": "https://github.com/cashfarm/autotypes#README",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "bin": {
