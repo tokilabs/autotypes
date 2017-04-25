@@ -23,7 +23,8 @@
     "lint:pkg": "ts-package-lint",
     "test": "cd tests && mocha --compilers ts:ts-node/register ./**/*.spec.ts",
     "test:watch": "tsc -w & nodemon --watch lib --watch tests -e js,ts --exec 'npm test' --delay 500ms",
-    "test:debug": "cd tests && tsc && node-inspector ../node_modules/.bin/_mocha ./compiled/tests/*.spec.js --debug-brk"
+    "test:debug": "cd tests && tsc && node-inspector ../node_modules/.bin/_mocha ./compiled/tests/*.spec.js --debug-brk",
+    "patch-release": "npm version patch && npm publish && git push --follow-tags"
   },
   "devDependencies": {
     "@types/chai-as-promised": "^0.0.30",
@@ -46,7 +47,6 @@
     "trash-cli": "^1.4.0",
     "ts-node": "^3.0.2",
     "ts-package-lint": "^0.2.2",
-    "tslib": "^1.6.1",
     "tslint": "4.x",
     "tslint-microsoft-contrib": "^4.0.1",
     "typescript": "^2.2.2"
@@ -56,6 +56,7 @@
     "debug": "^2.6.4",
     "lodash": "^4.17.4",
     "request": "^2.81.0",
-    "request-promise-native": "^1.0.3"
+    "request-promise-native": "^1.0.3",
+    "tslib": "^1.6.1"
   }
 }
