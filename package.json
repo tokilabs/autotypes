@@ -14,7 +14,7 @@
     "autotypes": "./lib/index.js"
   },
   "scripts": {
-    "setup:dev": "yarn install && ln -s ../../lib node_modules/@cashfarm/autotypes",
+    "setup:dev": "yarn install && mkdir -p node_modules/@cashfarm/autotypes && ln -s ../../lib node_modules/@cashfarm/autotypes",
     "build": "npm run clean && npm run lint && npm test && tsc && npm run lint:pkg",
     "clean": "trash ./lib",
     "docs": "./node_modules/.bin/typedoc --out ./docs --target es6 --mode file --ignoreCompilerErrors",
